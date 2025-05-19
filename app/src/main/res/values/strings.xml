@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ContactDoctorApp</string>
+
+    <!-- Doctor fragment strings -->
+    <string name="filter_by_specialty">Filter by Specialty</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="save_doctor">Save Doctor</string>
+    <string name="update_doctor">Update Doctor</string>
+    <string name="delete_doctor">Delete Doctor</string>
+    <string name="go_to_specialty">Go to Specialty</string>
+
+    <!-- Specialty fragment strings -->
+    <string name="specialty_description">Specialty Description</string>
+    <string name="save_specialty">Save Specialty</string>
+    <string name="update_specialty">Update Specialty</string>
+    <string name="delete_specialty">Delete Specialty</string>
+    <string name="go_to_doctor">Go to Doctor</string>
+</resources>

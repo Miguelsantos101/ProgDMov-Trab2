@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSpecialty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:autofillHints="specialty_description"
+        android:hint="@string/specialty_description"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#546E7A" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/save_specialty" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/update_specialty" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/delete_specialty" />
+
+    <Button
+        android:id="@+id/btnToDoctor"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/go_to_doctor" />
+
+    <ListView
+        android:id="@+id/listViewSpecialties"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>

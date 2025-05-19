@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CadastroMédicoApp</string>
+
+    <!-- Doctor fragment strings -->
+    <string name="filter_by_specialty">Filtrar por Especialidade</string>
+    <string name="doctor_name">Nome do Médico</string>
+    <string name="phone_number">Número de Telefone</string>
+    <string name="address">Endereço</string>
+    <string name="save_doctor">Salvar Médico</string>
+    <string name="update_doctor">Atualizar Médico</string>
+    <string name="delete_doctor">Excluir Médico</string>
+    <string name="go_to_specialty">Ir para Especialidade</string>
+
+    <!-- Specialty fragment strings -->
+    <string name="specialty_description">Descrição da Especialidade</string>
+    <string name="save_specialty">Salvar Especialidade</string>
+    <string name="update_specialty">Atualizar Especialidade</string>
+    <string name="delete_specialty">Excluir Especialidade</string>
+    <string name="go_to_doctor">Ir para Médico</string>
+
+</resources>
