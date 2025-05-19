@@ -16,13 +16,12 @@ import com.example.contactdoctorapp.data.entity.Specialty;
 import com.example.contactdoctorapp.databinding.FragmentSpecialtyBinding;
 import com.example.contactdoctorapp.ui.doctor.DoctorFragment;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SpecialtyFragment extends Fragment {
     private FragmentSpecialtyBinding binding;
     private ContactDoctorDatabase db;
-    private List<Specialty> specialties = new ArrayList<>();
+    private List<Specialty> specialties;
     private ArrayAdapter<Specialty> adapter;
     private Specialty selectedSpecialty;
 
@@ -36,11 +35,7 @@ public class SpecialtyFragment extends Fragment {
 
         loadSpecialties();
 
-        binding.btnToDoctor.setOnClickListener(v ->
-                requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, new DoctorFragment())
-                        .commit()
-        );
+        binding.btnToDoctor.setOnClickListener(v -> requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DoctorFragment()).commit());
 
         binding.btnSave.setOnClickListener(v -> saveSpecialty());
         binding.btnUpdate.setOnClickListener(v -> updateSpecialty());
@@ -80,9 +75,11 @@ public class SpecialtyFragment extends Fragment {
             Specialty s = new Specialty();
             s.description = desc;
             db.specialtyDao().insert(s);
-            Toast.makeText(getContext(), "Specialty saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), getString(R.string.toast_specialty_saved), Toast.LENGTH_SHORT).show();
             binding.editDescription.setText("");
             loadSpecialties();
+        } else {
+            Toast.makeText(getContext(), getString(R.string.toast_no_specialties), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -90,7 +87,7 @@ public class SpecialtyFragment extends Fragment {
         if (selectedSpecialty != null) {
             selectedSpecialty.description = binding.editDescription.getText().toString().trim();
             db.specialtyDao().update(selectedSpecialty);
-            Toast.makeText(getContext(), "Specialty updated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), getString(R.string.toast_specialty_updated), Toast.LENGTH_SHORT).show();
             binding.editDescription.setText("");
             selectedSpecialty = null;
             loadSpecialties();
@@ -102,13 +99,14 @@ public class SpecialtyFragment extends Fragment {
             int count = db.specialtyDao().countDoctorsBySpecialty(selectedSpecialty.id);
             if (count == 0) {
                 db.specialtyDao().delete(selectedSpecialty);
-                Toast.makeText(getContext(), "Specialty deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), getString(R.string.toast_specialty_deleted), Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getContext(), "Cannot delete specialty. Doctors are linked to it.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), getString(R.string.toast_specialty_delete_error), Toast.LENGTH_LONG).show();
             }
             binding.editDescription.setText("");
             selectedSpecialty = null;
             loadSpecialties();
         }
     }
+
 }

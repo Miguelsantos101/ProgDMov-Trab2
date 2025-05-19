@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CadastroMédicoApp</string>
+    <string name="app_name">Cadastro Médico</string>
 
     <!-- Doctor fragment strings -->
     <string name="filter_by_specialty">Filtrar por Especialidade</string>
@@ -10,13 +10,30 @@
     <string name="save_doctor">Salvar Médico</string>
     <string name="update_doctor">Atualizar Médico</string>
     <string name="delete_doctor">Excluir Médico</string>
-    <string name="go_to_specialty">Ir para Especialidade</string>
+    <string name="go_to_specialty">Ir para Especialidades</string>
+
+    <string name="label_name">Nome: %1$s</string>
+    <string name="label_phone">Telefone: %1$s</string>
+    <string name="label_address">Endereço: %1$s</string>
+    <string name="label_specialty">Especialidade: %1$s</string>
+
+    <string name="toast_doctor_saved">Médico salvo</string>
+    <string name="toast_doctor_updated">Médico atualizado</string>
+    <string name="toast_doctor_deleted">Médico excluído</string>
+    <string name="toast_no_specialties">Nenhuma especialidade cadastrada</string>
+
+    <string name="all_specialties">Todas as Especialidades</string>"
 
     <!-- Specialty fragment strings -->
     <string name="specialty_description">Descrição da Especialidade</string>
     <string name="save_specialty">Salvar Especialidade</string>
     <string name="update_specialty">Atualizar Especialidade</string>
     <string name="delete_specialty">Excluir Especialidade</string>
-    <string name="go_to_doctor">Ir para Médico</string>
+    <string name="go_to_doctor">Ir para Médicos</string>
 
+    <string name="toast_specialty_saved">Especialidade salva</string>
+    <string name="toast_specialty_updated">Especialidade atualizada</string>
+    <string name="toast_specialty_deleted">Especialidade excluída</string>
+    <string name="toast_no_specialty_description">Digite uma descrição de especialidade</string>
+    <string name="toast_specialty_delete_error">Não é possível excluir a especialidade. Médicos estão vinculados a ela.</string>
 </resources>

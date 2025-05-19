@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ContactDoctorApp</string>
+    <string name="app_name">Medical Registration</string>
 
-    <!-- Doctor fragment strings -->
+    <!-- Doctor strings -->
     <string name="filter_by_specialty">Filter by Specialty</string>
     <string name="doctor_name">Doctor Name</string>
     <string name="phone_number">Phone Number</string>
@@ -9,12 +10,30 @@
     <string name="save_doctor">Save Doctor</string>
     <string name="update_doctor">Update Doctor</string>
     <string name="delete_doctor">Delete Doctor</string>
-    <string name="go_to_specialty">Go to Specialty</string>
+    <string name="go_to_specialty">Go to Specialty\'s</string>
 
-    <!-- Specialty fragment strings -->
+    <string name="label_name">Name: %1$s</string>
+    <string name="label_phone">Phone number: %1$s</string>
+    <string name="label_address">Address: %1$s</string>
+    <string name="label_specialty">Specialty: %1$s</string>
+
+    <string name="toast_doctor_saved">Doctor saved</string>
+    <string name="toast_doctor_updated">Doctor updated</string>
+    <string name="toast_doctor_deleted">Doctor deleted</string>
+    <string name="toast_no_specialties">No specialties registered</string>
+
+    <string name="all_specialties">All Specialties</string>"
+
+    <!-- Specialty strings -->
     <string name="specialty_description">Specialty Description</string>
     <string name="save_specialty">Save Specialty</string>
     <string name="update_specialty">Update Specialty</string>
     <string name="delete_specialty">Delete Specialty</string>
-    <string name="go_to_doctor">Go to Doctor</string>
+    <string name="go_to_doctor">Go to Doctors</string>
+
+    <string name="toast_specialty_saved">Specialty saved</string>
+    <string name="toast_specialty_updated">Specialty updated</string>
+    <string name="toast_specialty_deleted">Specialty deleted</string>
+    <string name="toast_no_specialty_description">Type a specialty description</string>
+    <string name="toast_specialty_delete_error">Cannot delete specialty. Doctors are linked to it.</string>
 </resources>
