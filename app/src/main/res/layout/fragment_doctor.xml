@@ -20,13 +20,6 @@
         android:textFontWeight="400"
         android:textSize="26sp" />
 
-    <Spinner
-        android:id="@+id/spinnerFilter"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center_horizontal"
-        android:prompt="@string/filter_by_specialty" />
-
     <EditText
         android:id="@+id/editName"
         android:layout_width="320dp"
@@ -69,7 +62,8 @@
         android:id="@+id/spinnerSpecialty"
         android:layout_width="320dp"
         android:layout_height="48dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/btn_dropdown" />
 
     <Button
         android:id="@+id/btnSave"
@@ -110,6 +104,14 @@
         android:text="@string/go_to_specialty"
         android:textColor="@color/white"
         app:cornerRadius="0dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/btn_dropdown"
+        android:prompt="@string/filter_by_specialty" />
 
     <ListView
         android:id="@+id/listViewDoctors"
