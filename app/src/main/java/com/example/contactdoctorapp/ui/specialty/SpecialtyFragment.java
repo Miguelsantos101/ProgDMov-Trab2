@@ -79,7 +79,7 @@ public class SpecialtyFragment extends Fragment {
             binding.editDescription.setText("");
             loadSpecialties();
         } else {
-            Toast.makeText(getContext(), getString(R.string.toast_no_specialties), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), getString(R.string.toast_no_specialty_description), Toast.LENGTH_SHORT).show();
         }
     }
 
